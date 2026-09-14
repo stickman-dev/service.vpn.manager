@@ -1103,7 +1103,7 @@ def getGitMetaData(vpn_provider):
     try:
         # Download the update time stamp and list of files available
         debugTrace("Getting git metadata for " + vpn_provider)
-        download_url = "https://raw.githubusercontent.com/Zomboided/service.vpn.manager.providers/master/" + vpn_provider + "/METADATA.txt"
+        download_url = "https://raw.githubusercontent.com/stickman-dev/service.vpn.manager.providers/master/" + vpn_provider + "/METADATA.txt"
         download_url = download_url.replace(" ", "%20")
         if ifHTTPTrace(): debugTrace("Using " + download_url)
         response = urlopen(download_url)
@@ -1326,7 +1326,7 @@ def refreshVPNFiles(vpn_provider, progress):
                     if progress.iscanceled(): return False
                     progress_message = "Downloading " + file
                     progress.update(int(progress_count), progress_title + "\n" + progress_message + "\n\n")
-                download_url = "https://raw.githubusercontent.com/Zomboided/service.vpn.manager.providers/master/" + vpn_provider + "/" + file
+                download_url = "https://raw.githubusercontent.com/stickman-dev/service.vpn.manager.providers/master/" + vpn_provider + "/" + file
                 download_url = download_url.replace(" ", "%20")
                 if ifHTTPTrace(): debugTrace("Using " + download_url)
                 response = urlopen(download_url)

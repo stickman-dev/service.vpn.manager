@@ -1,3 +1,6 @@
+v7.0.6
+- Fix PIA connections failing TLS handshake due to stale CRL file rejected by current OpenSSL; provider files now sourced from our own fork of service.vpn.manager.providers
+
 v7.0.5
 - Fix NordVPN authentication after API change requiring "Bearer token:" prefix on the Authorization header
 
