@@ -1,6 +1,8 @@
 VPN Manager for OpenVPN
 =======================
 
+This is a fork of [Zomboided/service.vpn.manager](https://github.com/Zomboided/service.vpn.manager), which is no longer maintained. This fork fixes NordVPN and PIA connections, which had broken as those providers changed how they work; other providers may still be broken, and will be fixed reactively as they're reported.
+
 NOTE : Kodi 19 Matrix version [here in pre-release](https://github.com/Zomboided/service.vpn.manager/releases/tag/6.9.3)
 
 This add-on is a service for Kodi that allows the user to vary the level of
@@ -18,4 +20,4 @@ Control of the VPN is also possible via a remote control button or hot key,
 allowing the user to manually cycle between connections.
 
 Full instructions can be found on the [GitHub wiki for this
-project](https://github.com/Zomboided/service.vpn.manager/wiki)
+project](https://github.com/stickman-dev/service.vpn.manager/wiki)
